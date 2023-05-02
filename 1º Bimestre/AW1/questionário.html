@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+</head>
+
+<body>
+    <form>
+    <fieldset>
+        <legend>Questionário</legend>
+        <fieldset>
+        <legend>Cadastro</legend>
+        <label>E-mail:</label>
+        <input type="email"> </input> 
+        <br>
+        <br>
+        <label>Senha:</label> 
+        <input type="text"> </input>
+    </fieldset>
+
+
+        <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>Nome: </label>
+        <input type="text"> </input> 
+        <br>
+        <br>
+        <label>Idade:</label> 
+        <input type="number"> </input>
+        <br>
+        <br>
+        <label>Telefone:</label>
+        <input type=""> </input>
+        <br>
+        <br>
+        <label>Data de nascimento:</label>
+         <input type="date"> </input>
+        <br>
+        <br>
+        <label>Gênero:</label>
+        <input type="radio" id="masculino" name="Gênero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="Gênero" value="feminino">
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="outros" name="Gênero" value="outros">
+        <label for="outros">Outros</label>
+        <input type="radio" id="prefiro não responder" name="Gênero" value="prefiro não responder">
+        <label for="prefiro não responder">Prefiro não responder</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferências</legend>
+        <label> Marca de celular que você utiliza: </label>
+        <select name="ex" id="ex">
+            <option value="Apple">Apple</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Motorola">Motorola</option>
+            <option value="Xiaomi">Xiaomi</option>
+            <option value="Não está nas opções">Nenhuma</option>
+        </select>
+        <br>
+        <br>
+        <label fpr="browser"> Escolha um navegador: </label>
+        <input type="text" id="browser" name="browser" list="browsers">
+        <datalist id="browsers">
+            <option value="Chrome"> </option>
+            <option value="Safari"> </option>
+            <option value="Edge"> </option>
+            <option value="Firefox"> </option>
+        </datalist>
+        <br>
+        <br>
+         <label> Escolha os ritmos músicais que você escuta: </label>
+        <input type="checkbox"> Sertanejo
+        <input type="checkbox"> Rock
+        <input type="checkbox"> Funk
+        <input type="checkbox"> Trap
+        <input type="checkbox"> MPB
+        <input type="checkbox"> POP
+    </fieldset>
+    <fieldset>
+        <legend> Comentário</legend>
+        <textarea id="comentário" name="comentário" rows="4" cols="50" placeholder="iDigite um comentário!"> </textarea>
+    </fieldset>
+    <button type="reset">Resetar</button>
+    <button type="submit">Enviar</button>
+    </form>
+</fieldset>
+</body>
+</html>

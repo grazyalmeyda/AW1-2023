@@ -1,0 +1,12 @@
+.cabecalho{
+    display: block;
+    text-align: center;
+    background-color: pink;
+}
+.exemplo{
+    display: inline;
+    text-align: center;
+    border: 1px solid blue;
+    color: blue;
+
+}
