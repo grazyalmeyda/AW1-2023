@@ -5,33 +5,45 @@
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
     margin: 0;
+    scroll-behavior: smooth;
 }
 body{
-    background: rgb(238,122,173);
-background: radial-gradient(circle, rgba(238,122,173,1) 0%, rgba(239,159,210,1) 27%, rgba(240,198,249,1) 100%, rgba(148,187,233,1) 100%);
+    background: conic-gradient(from -90deg at 50% 105%, white, orchid)
 }
 
 h1 {
-    background: -webkit-linear-gradient(#81004b, #ff5599);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;text-align: center;
+    text-align: center;
     font-size: 40px;
-    color: #e50f61;
+    background: radial-gradient(circle, rgba(251,63,165,1) 0%, rgba(229,15,97,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bolder;
     margin: 1rem;
+}
+h1:hover {
+    font-size: 45px;
+    transition: .5s;
+    cursor: pointer;
 }
 
 h2{
     text-align: center;
     font-size: 32px;
-    color: #2e2e2e;
+    background: radial-gradient(circle, rgb(235, 160, 201) 0%, rgb(240, 133, 174) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bolder;
     margin: 1rem;
 }
 
+h2:hover {
+    cursor: pointer;
+    transition: .5s;
+}
+
 header {
     display: flex;
-    background-color: #ff5599;
+    background: radial-gradient(circle, rgba(251,63,165,1) 0%, rgba(229,15,97,1) 100%);
     color: #fff;
     text-align: center;
     font-size: 30px;
@@ -41,8 +53,12 @@ header {
 }
 
 .logo {
-    width: 90px;
-    height: 45px;
+    width:5%;
+    cursor: pointer;
+}
+.logo:hover {
+    rotate: 20deg;
+    transition: .5s;
 }
 
 nav {
@@ -57,41 +73,43 @@ nav > a {
     transition: .5s;
 }
 nav a:hover {
-    color: #e50f61;
+    color: #ff97bf;
+    font-weight: bolder;
 }
 .active {
-    color: #e50f61;
+    color: #ff97bf;
     font-weight: bolder;
 }
 
 main {
     font-size: 20px;
     padding: 20px;
-    margin: 0, 20px;
 }
 
 .conteiner {
     text-align: center;
     margin: 20px;
-    padding: 20px;
 }
 
 .conteiner p {
     text-align: justify;
-    text-indent: 20px;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 500;
     color: #2e2e2e;
     line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
 .foto {
     width: 350px;
     height: 500px;
-    border: 10px solid #ff5599;
-    border-radius: 10px;
-    border-image: linear-gradient(to right, rgb(237, 181, 245), rgb(255, 0, 179));
-    border-image-slice: 1;
+    border: 2px solid #ff5599;
+}
+
+.foto:hover {
+    transform: scale(1.05);
+    border-radius: 20px;
+    transition: .5s;
 }
 .barbie-table {
     text-align: center; /* Centraliza o conteúdo horizontalmente */
@@ -102,6 +120,16 @@ table {
     width: 90%; /* Define o tamanho da tabela */
     margin: 0 auto; /* Centraliza a tabela na página */
     background-color: #f7f7f7;
+}
+table:hover {
+    transform: scale(1.05);
+    transition: .5s;
+}
+tr:hover {
+    background-color: #ffd1e2;
+    color: #2e2e2e;
+    cursor: pointer;
+    transition: .3s;
 }
 th, td {
     border: 1px solid #ff5599; /* Define o tamanho e cor do borda */
@@ -114,11 +142,12 @@ th {
     background-color: #ff5599;
     color: #fff;
 }
+
 td {
     color: #2e2e2e;
     font-size: 28px;
     font-weight: 500;
-    }
+}
 
 .barbie-form {
     display: flex;
@@ -138,7 +167,16 @@ td {
     margin-top: 10px;
     font-weight: bold;
 }
-    
+.field {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+} 
+.field:hover {
+    transform: scale(1.1);
+    transition: .2s;
+    color: #ff5599;
+}
 .barbie-form input,
 .barbie-form textarea {
     width: 100%;
@@ -147,7 +185,14 @@ td {
     margin-bottom: 15px;
     box-sizing: border-box;
 }
-
+.barbie-form input:hover {
+    transition: .5s;
+    border: 2px solid #ff5599;
+}
+.barbie-form textarea:hover {
+    transition: .5s;
+    border: 2px solid #ff5599;
+}
 button {
     width: 150px;
     height: 50px;
@@ -168,7 +213,7 @@ button:hover {
     transition: .5s;
 }
 footer {
-    background-color: #ff5599;
+    background: radial-gradient(circle, rgba(251,63,165,1) 0%, rgba(229,15,97,1) 100%);
     color: #ffff;
     text-align: center;
     font-size: 20px;
