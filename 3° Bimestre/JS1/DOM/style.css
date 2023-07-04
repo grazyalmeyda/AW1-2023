@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F5F5DC;
+    color: #FF69B4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFC0CB;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #f1909f;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    padding: 5px 10px;
+    border: 1px solid #fdfdfd;
+    border-radius: 5px;
+}
+
+section {
+    text-align: center;
+    margin: 20px;
+}
+
+h2 {
+    color: #FF69B4;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #FF69B4;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #FF69B4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #FF69B4;
+}
+
+th {
+    background-color: #FF69B4;
+    color: white;
+}
